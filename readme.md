@@ -60,6 +60,8 @@ One of the strong and unique advantage from using Zajax Pro is the page preloadi
 Demo with full features: http://podzic.com/
 Demo 2 with full features: http://reveilletoi.com/
 
+Plugin page https://wordpress.org/plugins/zajax-ajax-navigation/
+
 
 ## Installation ##
 
