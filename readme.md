@@ -21,7 +21,6 @@ Zajax is a WordPress plugin who add ajax navigation to your WordPress website. I
 Beautifull loading bar at the top and a loading circle in the center. (Look like mobile loading from Android). Some differences with others ajax pluging. it will work with all form, input, comments ect.. Preload pages on mouse hover for instant page loading, multiple sections reload and Google analytics support with the Zajax-pro version.
 
 Demo with full features: http://podzic.com/
-
 Demo 2 with full features: http://reveilletoi.com/
 
 * Fast pages loading.
