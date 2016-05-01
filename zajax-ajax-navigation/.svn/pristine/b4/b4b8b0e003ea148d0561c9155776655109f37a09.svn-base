@@ -1,33 +1,23 @@
-# Zajax - Ajax Navigation #
-**Contributors:** onigetoc
-  
-**Donate link:** http://www.scriptsmashup.com/donation
-  
-**Tags:** ajax, ajax page loader, ajax search, ajax wordpress, ajax navigation, ajaxify, ajaxify posts, ajaxify wordpress site, ajaxify wordpres site, ajaxy pages, navigation ajax, dynamic, no page refresh, no refresh, page, pages, Post, posts, wordpress ajax page load, zajax
-  
-**Requires at least:** 3.0.1
-  
-**Tested up to:** 3.2
-  
-**Stable tag:** 4.4
-  
-**License:** GPLv2 or later
-  
-**License URI:** http://www.gnu.org/licenses/gpl-2.0.html
-  
+=== Zajax - Ajax Navigation ===
+Contributors: (onigetoc)
+Tags: ajax, ajax page loader, ajax search, ajax wordpress, ajax navigation, ajaxify, ajaxify posts, ajaxify wordpress site, ajaxify wordpres site, ajaxy pages, navigation ajax, dynamic, no page refresh, no refresh, page, pages, Post, posts, wordpress ajax page load, zajax
+Requires at least: 3.0.1
+Tested up to: 3.4
+Stable tag: 4.4
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-## Description ##
+== Description ==
 Zajax is a WordPress plugin who add ajax navigation to your WordPress website. It will work with search, All form will work, like comments, it will understand links with # hash and external links or admin links.
-Beautifull loading bar at the top and a loading circle in the center. (Look like mobile loading from Android). Some differences with others ajax pluging. it will work with all form, input, comments ect.. Preload pages on mouse hover for instant page loading, multiple sections reload and Google analytics support with the Zajax-pro version.
-
+Beautifull loading bar at the top and a loading circle in the center. (Look like mobile loading from Android). Some differences with others ajax pluging. Zajax work with Google analytics, it will work with all form, input, comments ect.. Preload pages on mouse hover for instant loading with the Zajax-pro version.
 Demo with full features: http://podzic.com/
-
 Demo 2 with full features: http://reveilletoi.com/
 
 * Fast pages loading.
 * Choose the section you want to load in ajax (ID or Class), by just providing the ID/CLASS with #/. as prefix.
-* Work with search form, just providing the ID/CLASS with #/. as prefix in Search form TAG. (Multiple searchs forms too).
+* Work with search form, just providing the ID/CLASS with #/. as prefix in Search form TAG. (Multiple searchs forms too)
 * All form will work, comments, Contact page ect.
+* Work well with google analytics.
 * Fade In, Fade out transition.
 * Loading bar at the top and a loading circle in the center. (Look like mobile loading from Android).
 * Work with music player who are external to the loading main section. (Music will continue to play).
@@ -49,21 +39,16 @@ I created this plugin for my music website to have continuous music playing whil
 **Zajax Pro**
 http://www.scriptsmashup.com/product/zajax-ajax-navigation-plugin-for-wordpress
 
-One of the strong and unique advantage from using Zajax Pro is the page preloading feature on mouse hover, Some page will load on a blink of an eye. It will wait 100 millisecond on mouse hover before preloading the page to not overload your server. The page preload on mouse hover before the user click on the link, as the user click, the page may already has preloaded and the new page will appear in a fraction of a second. Some differences with others ajax pluging. Zajax work with Google analytics, it will work with all form, input, comments ect.. Preload pages on mouse hover for instant loading with the Zajax-pro version.
+One of the strong and unique advantage from using Zajax Pro is the page preloading feature on mouse hover, Some page will load on a blink of an eye. It will wait 100 millisecond on mouse hover before preloading the page to not overload your server.
 
 *Pro version feature:*
-
 * Preload page on mouse hover to load faster when user click on the link.
 * Reload multiple sections outside the main section by ID or Class. (Menu, footer, sidebar, Ads, Google Ads). by just providing the ID/CLASS with #/. as prefix.
-* Google analytics support.
 
 Demo with full features: http://podzic.com/
 Demo 2 with full features: http://reveilletoi.com/
 
-Plugin page https://wordpress.org/plugins/zajax-ajax-navigation/
-
-
-## Installation ##
+== Installation ==
 
 This section describes how to install the plugin and get it working.
 
@@ -71,27 +56,14 @@ This section describes how to install the plugin and get it working.
 2. Activate the plugin from your Plugins page.
 3. Go to your admin menu, Under Setting, click the link, “Zajax” to go to the Zajax setting page.
 
-## Screenshots ##
+== Screenshots ==
 
-###1. Video website using Zajax.
-###
-[missing image]
+1. Video website using Zajax.
+2. Zajax settings page.
 
-###2. Zajax settings page.
-###
-[missing image]
+== Frequently Asked Questions ==
 
+== Changelog ==
 
-## Frequently Asked Questions ##
-
-## Changelog ##
-
-### 0.1 ###
+= 0.1 =
 * First release.
-
-### 0.2 ###
-* Minor bugs fix.
-
-### 0.4 ###
-* Added no-ajax class for custom non ajax link.
-* Added Paypal form to be non ajax.

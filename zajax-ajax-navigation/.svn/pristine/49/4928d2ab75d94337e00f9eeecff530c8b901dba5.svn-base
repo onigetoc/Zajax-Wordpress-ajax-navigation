@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: Zajax
-Plugin URI: http://www.wordpress.org/wordpress-plugins/zajax
+Plugin URI: http://www.wordpress.com/wordpress-plugins/zajax
 Description: Ajax navigation for Wordpress
 Author: onigetoc
-Version: 0.4
+Version: 0.1
 Author URI: http://www.scriptsmashup.com
 */
 
@@ -143,7 +143,7 @@ function zajax_settings()
 		$zajax_main = '#content';
 		$zajax_search = '#searchform';
 		$zajax_loading = '2299dd';
-		$zajax_preload = 0;
+		$zajax_preload = 1;
 		$zajax_back = 1;
 		//$zajax_ClassID = '.menu';			
 	}
@@ -182,30 +182,8 @@ $plugin_name = $plugin_data['Name'];
 ?>
 
 <div class="wrap">
-<h2><span class="dashicons dashicons-update" style="line-height: inherit;"></span> <?php echo $plugin_name ?> Settings</h2><?php 
-    echo $message ;
-    
-    if ($plugin_name != 'Zajax-Pro') { ?>
-        <table class="wp-list-table widefat fixed bookmarks" style="margin-bottom: 20px;">
-            <thead>
-                <tr>
-                    <th><strong>Get Zajax Pro</strong></th>
-                </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td><a style="float: left;margin-right: 50px;" href="http://www.scriptsmashup.com/product/zajax-ajax-navigation-plugin-for-wordpress" target="_blank"><img src="http://www.scriptsmashup.com/wp-content/uploads/2015/12/square-banner-zajax-100px.png"></a>
-                    <a href="http://www.scriptsmashup.com/product/zajax-ajax-navigation-plugin-for-wordpress" target="_blank"><h3 style="color: #167CFF;margin-top: 0;">Get Zajax Pro</h3></a>
-                    <ol>
-                    	<li>Preload page on mouse hover to load faster when user click on the link.</li>
-                    	<li>Reload multiple sections outside the main section by ID or Class. (Menu, footer, sidebar, Ads, Google Ads). by just providing the ID/CLASS with #/. as prefix.</li>
-                        <li>Work with Google Analytics</li>
-                    </ol>
-                </td>
-             </tr>
-          </tbody>
-        </table><?php } ?>
-    
+        <h2><span class="dashicons dashicons-update" style="line-height: inherit;"></span> <?php echo $plugin_name ?> Settings</h2>
+<?php echo $message ?>
 <form method="post" action="">
 <input type="hidden" name="action" value="update" />
  <table class="wp-list-table widefat fixed bookmarks">
@@ -251,9 +229,8 @@ $plugin_name = $plugin_data['Name'];
  			<!-- Others content Id or class -->
             <th scope="row">other content ID or Class</th>
             <td>
-            <span class="description wtf"> Enter one or many others elements to add who are external to the main content area that who want to reload EX: <strong>.menu,header,.widget-area</strong>. They should be outside the main container (you can mix with desktop and mobile version)</span><br class="wtf">
-                <a href="http://www.scriptsmashup.com/product/zajax-ajax-navigation-plugin-for-wordpress" target="_blank"><strong class="wth" style="color: #167CFF;">Pro Version Only</strong></a>
-                <input class="wtf" type="text" name="zajax[zajax_ClassID]" style="width:80%;" class="none" id="none" value="<?php echo $zajax_ClassID ?>"></input>
+            <span class="description"> Enter one or many others elements to add who are external to the main content area that who want to reload EX: <strong>.menu,header,.widget-area</strong>. They should be outside the main container (you can mix with desktop and mobile version)</span><br />
+            <input type="text" name="zajax[zajax_ClassID]" style="width:80%;" class="none" id="none" value="<?php echo $zajax_ClassID ?>"></input>
     
             </td>
             </tr>
@@ -288,9 +265,8 @@ $plugin_name = $plugin_data['Name'];
             <tr valign="top">
             <th scope="row">Preload page on Mouse Hover</th>
             <td>
-            <span class="description wtf">Page will preload when user Mouse Hover a link more than 100 miliseconds ( Uncheck if this function add too much burden on your server but page will load slower )</span>
-                <span class="wtf"><br><br>Preload page on Mouse Hover: <input type="checkbox" name="zajax[zajax_preload]" value="1" <?php if ($zajax_preload == 1) { echo ' CHECKED="CHECKED" ';} ?> /></span>
-                <a href="http://www.scriptsmashup.com/product/zajax-ajax-navigation-plugin-for-wordpress" target="_blank"><strong class="wth" style="color: #167CFF;">Pro Version Only</strong></a>
+            <span class="description">Page will preload when user Mouse Hover a link more than 100 miliseconds ( Uncheck if this function add too much burden on your server but page will load slower )</span><br /><br />
+                Preload page on Mouse Hover: <input type="checkbox" name="zajax[zajax_preload]" value="1" <?php if ($zajax_preload == 1) { echo ' CHECKED="CHECKED" ';} ?> />
             </td>
             </tr>
             
@@ -396,6 +372,7 @@ jQuery(document).ready(function($){
 </script>
 <style>
 /* plugin admin */
+
 .zajax_picker{
 	width: 90px;
 	border-right: 30px solid;
@@ -421,11 +398,7 @@ jQuery(document).ready(function($){
 	margin-left: 5px;
 	line-height: 30px;
 }
-/*
-.wth{
-    display: none;
-}
-*/
+
 </style>
 <?php } // End Setting function 
 
